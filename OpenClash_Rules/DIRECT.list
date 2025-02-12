@@ -196,6 +196,9 @@ DOMAIN-SUFFIX,nextpt.net
 DOMAIN-SUFFIX,connects.icu
 # 影
 DOMAIN-SUFFIX,star-space.net
+# 
+DOMAIN-SUFFIX,pandapt.net
+
 
 # 魔法工具和下载工具 直连
 PROCESS-NAME,BaiduNetdisk_mac
