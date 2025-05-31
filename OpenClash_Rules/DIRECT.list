@@ -9,11 +9,6 @@
 DOMAIN-SUFFIX,zerotier.com
 
 
-# 自用
-IP-CIDR,138.2.112.177/32,no-resolve
-
-
-
 # GitHub CDN
 DOMAIN-SUFFIX,jsdelivr.net
 # 猫眼浏览器
@@ -187,7 +182,6 @@ DOMAIN-SUFFIX,52dic.vip
 DOMAIN-SUFFIX,totheglory.im
 DOMAIN-SUFFIX,pterclub.com
 # U2
-DOMAIN-SUFFIX,dmhy.org
 DOMAIN-SUFFIX,daydream.dmhy.best
 # 外站
 DOMAIN-SUFFIX,blutopia.cc
