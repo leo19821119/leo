@@ -1,7 +1,8 @@
 # 默认直连但是随时可能需要切换的列表，来自个人收集
 
 # 特别服务
-DOMAIN-SUFFIX,vps1.ilgq.cn
-DOMAIN-SUFFIX,vps2.ilgq.cn
+DOMAIN-SUFFIX,ilgq.cn
+DOMAIN-SUFFIX,1852043.xyz
+DOMAIN-SUFFIX,ilgq.dpdns.org
 IP-CIDR,158.180.81.63/32
 IP-CIDR,158.179.193.170/32
