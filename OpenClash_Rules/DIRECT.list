@@ -9,8 +9,8 @@
 PROCESS-NAME,lucky
 PROCESS-NAME,vpnserver
 PROCESS-NAME,cloudflared
-
-
+PROCESS-NAME,zerotier-one
+PROCESS-NAME,n2n-edge
 
 # vpn域名
 DOMAIN-SUFFIX,zerotier.com
