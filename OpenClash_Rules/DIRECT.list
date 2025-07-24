@@ -5,6 +5,13 @@
 # 部分域名可能和中国大陆域名列表存在重叠
 # 规则内容较少，不会影响性能，请放心使用
 
+# 部分工具 直连
+PROCESS-NAME,lucky
+PROCESS-NAME,vpnserver
+PROCESS-NAME,cloudflared
+
+
+
 # vpn域名
 DOMAIN-SUFFIX,zerotier.com
 
