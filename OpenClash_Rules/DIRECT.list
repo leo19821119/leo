@@ -14,7 +14,8 @@ PROCESS-NAME,n2n-edge
 
 # vpn域名
 DOMAIN-SUFFIX,zerotier.com
-
+# cf tunnel
+DOMAIN-SUFFIX,argotunnel.com
 
 # GitHub CDN
 DOMAIN-SUFFIX,jsdelivr.net
