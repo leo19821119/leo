@@ -20,7 +20,7 @@ PROCESS-NAME,ss-local
 PROCESS-NAME,ClashX
 PROCESS-NAME,clash
 
-# vpn域名
+# zerotier
 DOMAIN-SUFFIX,zerotier.com
 # cf tunnel
 #DOMAIN-SUFFIX,argotunnel.com
