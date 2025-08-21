@@ -3,6 +3,10 @@
 # REPO: https://github.com/Aethersailor/Custom_OpenClash_Rules
 # 强制代理列表，来自个人收集
 
+# cf tunnel
+DOMAIN-SUFFIX,argotunnel.com
+PROCESS-NAME,cloudflared
+
 # GooglePlay 相关
 DOMAIN-SUFFIX,services.googleapis.cn
 DOMAIN-SUFFIX,clientservices.googleapis.com
