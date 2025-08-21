@@ -5,7 +5,8 @@
 
 # cf tunnel
 DOMAIN-SUFFIX,argotunnel.com
-PROCESS-NAME,cloudflare
+PROCESS-NAME,cloudflared
+IP-CIDR,198.41.0.0/16,no-resolve
 
 # GooglePlay 相关
 DOMAIN-SUFFIX,services.googleapis.cn
