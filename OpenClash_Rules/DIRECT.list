@@ -11,7 +11,7 @@ PROCESS-NAME,vpnserver
 PROCESS-NAME,n2n-edge
 PROCESS-NAME,zerotier-one
 PROCESS-NAME,tailscaled
-#PROCESS-NAME,cloudflared
+
 
 # 魔法工具 直连
 PROCESS-NAME,trojan
@@ -22,8 +22,7 @@ PROCESS-NAME,clash
 
 # zerotier
 DOMAIN-SUFFIX,zerotier.com
-# cf tunnel
-#DOMAIN-SUFFIX,argotunnel.com
+
 
 # GitHub CDN
 DOMAIN-SUFFIX,jsdelivr.net
