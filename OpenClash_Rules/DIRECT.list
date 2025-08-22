@@ -5,6 +5,11 @@
 # 部分域名可能和中国大陆域名列表存在重叠
 # 规则内容较少，不会影响性能，请放心使用
 
+# cf tunnel
+DOMAIN-SUFFIX,argotunnel.com
+PROCESS-NAME,cloudflared
+IP-CIDR,198.41.0.0/16,no-resolve
+
 # 部分工具 直连
 PROCESS-NAME,lucky
 PROCESS-NAME,vpnserver
