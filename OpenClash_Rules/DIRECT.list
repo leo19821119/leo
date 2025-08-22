@@ -8,8 +8,7 @@
 # cf tunnel
 DOMAIN-SUFFIX,argotunnel.com
 PROCESS-NAME,cloudflared
-IP-CIDR,198.41.199.0/24,no-resolve
-IP-CIDR,198.41.200.0/24,no-resolve
+IP-CIDR,198.41.0.0/16,no-resolve
 
 # 部分工具 直连
 PROCESS-NAME,lucky
