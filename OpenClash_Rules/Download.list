@@ -1,1 +1,193 @@
+# NAME: Download
+# AUTHOR: blackmatrix7
+# REPO: https://github.com/blackmatrix7/ios_rule_script
+# UPDATED: 2025-06-06 09:17:01
+# DOMAIN-KEYWORD: 5
+# DOMAIN-SUFFIX: 1
+# PROCESS-NAME: 28
+# TOTAL: 34
 
+# pt相关
+
+# pt图库 直连
+#DOMAIN-SUFFIX,pixhost.to
+#DOMAIN-SUFFIX,imgbox.com
+#DOMAIN-SUFFIX,ptpimg.me
+
+# pt站点 直连
+DOMAIN-SUFFIX,invites.fun
+DOMAIN-SUFFIX,m-team.cc
+DOMAIN-SUFFIX,open.cd
+DOMAIN-SUFFIX,ptcafe.club
+DOMAIN-SUFFIX,tosky.club
+DOMAIN-SUFFIX,ubits.club
+# 爱萝莉
+DOMAIN-SUFFIX,ilolicon.com
+DOMAIN-SUFFIX,ilolicon.cc
+# 
+DOMAIN-SUFFIX,hdtime.org
+DOMAIN-SUFFIX,pttime.org
+DOMAIN-SUFFIX,crabpt.vip
+DOMAIN-SUFFIX,hdatmos.club
+# 冰淇淋
+DOMAIN-SUFFIX,icc2022.xyz
+DOMAIN-SUFFIX,czhch.com
+DOMAIN-SUFFIX,icc2022.de
+# 
+DOMAIN-SUFFIX,rousi.zip
+DOMAIN-SUFFIX,carpt.net
+# 青蛙
+DOMAIN-SUFFIX,qingwapt.com
+DOMAIN-SUFFIX,qingwa.pro
+DOMAIN-SUFFIX,qingwapt.org
+# 麒麟
+DOMAIN-SUFFIX,hdkyl.in
+DOMAIN-SUFFIX,hdkylin.top
+# 末日
+DOMAIN-SUFFIX,agsvpt.com
+DOMAIN-SUFFIX,trackers.work
+# 
+DOMAIN-SUFFIX,ptvicomo.net
+DOMAIN-SUFFIX,hdvideo.one
+DOMAIN-SUFFIX,cyanbug.net
+DOMAIN-SUFFIX,nicept.net
+DOMAIN-SUFFIX,btschool.club
+DOMAIN-SUFFIX,zhuque.in
+# 蝶粉
+DOMAIN-SUFFIX,discfan.net
+DOMAIN-SUFFIX,discfan.xyz
+# 
+DOMAIN-SUFFIX,hdhome.org
+DOMAIN-SUFFIX,hddolby.com
+DOMAIN-SUFFIX,hdarea.club
+DOMAIN-SUFFIX,hhanclub.top
+DOMAIN-SUFFIX,dragonhd.xyz
+# TCCF
+DOMAIN-SUFFIX,et8.org
+# 彩虹岛
+DOMAIN-SUFFIX,ptchdbits.co
+DOMAIN-SUFFIX,rainbowisland.co
+DOMAIN-SUFFIX,chdbits.xyz
+# 
+DOMAIN-SUFFIX,zmpt.cc
+# 铂金家
+DOMAIN-SUFFIX,pthome.net
+DOMAIN-SUFFIX,pthome.org
+# 
+DOMAIN-SUFFIX,haidan.video
+DOMAIN-SUFFIX,ptsbao.club
+# 好多油
+DOMAIN-SUFFIX,hdupt.com
+DOMAIN-SUFFIX,upxin.net
+# 城市
+DOMAIN-SUFFIX,hdcity.city
+DOMAIN-SUFFIX,leniter.org
+# 
+DOMAIN-SUFFIX,springsunday.net
+DOMAIN-SUFFIX,soulvoice.club
+DOMAIN-SUFFIX,hdsky.me
+# 观众
+DOMAIN-SUFFIX,audiences.me
+DOMAIN-SUFFIX,cinefiles.info
+# 
+DOMAIN-SUFFIX,hdfans.org
+# TLF
+DOMAIN-SUFFIX,eastgame.org
+# 
+DOMAIN-SUFFIX,keepfrds.com
+DOMAIN-SUFFIX,leaves.red
+DOMAIN-SUFFIX,piggo.me
+# 柠檬
+DOMAIN-SUFFIX,lemonhd.club
+DOMAIN-SUFFIX,ilovelemonhd.me
+# 
+DOMAIN-SUFFIX,hdpt.xyz
+DOMAIN-SUFFIX,tjupt.org
+DOMAIN-SUFFIX,ourbits.club
+DOMAIN-SUFFIX,azusa.wiki
+DOMAIN-SUFFIX,tu88.men
+DOMAIN-SUFFIX,greatposterwall.com
+# 海豚
+DOMAIN-SUFFIX,dicmusic.com
+DOMAIN-SUFFIX,52dic.vip
+# 
+DOMAIN-SUFFIX,totheglory.im
+DOMAIN-SUFFIX,pterclub.com
+# 外站
+DOMAIN-SUFFIX,blutopia.cc
+# 
+DOMAIN-SUFFIX,pandapt.net
+
+
+
+
+# 下载 直连
+
+DOMAIN-KEYWORD,xlliveud
+DOMAIN-KEYWORD,yunpan
+
+PROCESS-NAME,amuled
+PROCESS-NAME,fdm
+PROCESS-NAME,parsecd
+PROCESS-NAME,privoxy
+PROCESS-NAME,Folx
+PROCESS-NAME,LogiOptions
+PROCESS-NAME,LogiOptionsDaemon
+PROCESS-NAME,Motrix.app
+PROCESS-NAME,NetTransport
+PROCESS-NAME,UUBooster
+
+PROCESS-NAME,BaiduNetdisk_mac
+PROCESS-NAME,baidunetdisk.exe
+
+PROCESS-NAME,Weiyun
+PROCESS-NAME,Weiyun.exe
+
+DOMAIN-KEYWORD,thunder
+DOMAIN-KEYWORD,xunlei
+PROCESS-NAME,Thunder
+PROCESS-NAME,ThunderVIP
+PROCESS-NAME,Thunder.exe
+
+DOMAIN-KEYWORD,aria2
+PROCESS-NAME,aria2c
+PROCESS-NAME,aria2c.exe
+
+DOMAIN-SUFFIX,qbittorrent.org
+PROCESS-NAME,qBittorrent
+PROCESS-NAME,qbittorrent-nox
+PROCESS-NAME,qbittorrent.exe
+PROCESS-NAME,qbittorrent*
+
+DOMAIN-SUFFIX,transmissionbt.com
+PROCESS-NAME,Transmission
+PROCESS-NAME,transmission-daemon
+PROCESS-NAME,transmission-qt
+PROCESS-NAME,Transmission.exe
+
+PROCESS-NAME,uTorrent
+PROCESS-NAME,uTorrent.exe
+
+PROCESS-NAME,WebTorrent
+PROCESS-NAME,WebTorrent.exe
+PROCESS-NAME,WebTorrentHelper
+PROCESS-NAME,WebTorrentHelper.exe
+
+PROCESS-NAME,BitComet
+PROCESS-NAME,BitComet.exe
+PROCESS-NAME,BitComet_x64.exe
+
+PROCESS-NAME,DownloadService
+PROCESS-NAME,DownloadService.exe
+
+PROCESS-NAME,Folx
+PROCESS-NAME,Folx.exe
+
+PROCESS-NAME,NetTransport
+PROCESS-NAME,NetTransport.exe
+
+PROCESS-NAME,fdm
+PROCESS-NAME,fdm.exe
+
+PROCESS-NAME,SunloginClient_Desktop
+PROCESS-NAME,SunloginClient_Helper
