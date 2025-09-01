@@ -1,0 +1,31 @@
+# zerotier
+DOMAIN-SUFFIX,zerotier.com
+PROCESS-NAME,zerotier-one
+
+# GitHub CDN
+DOMAIN-SUFFIX,jsdelivr.net
+DOMAIN,cdn.jsdelivr.net
+
+
+# cf tunnel
+DOMAIN-SUFFIX,argotunnel.com
+PROCESS-NAME,cloudflared
+IP-CIDR,198.41.199.0/24,no-resolve
+IP-CIDR,198.41.200.0/24,no-resolve
+
+# 网络工具 直连
+PROCESS-NAME,lucky
+PROCESS-NAME,vpnserver
+PROCESS-NAME,n2n-edge
+PROCESS-NAME,tailscaled
+
+# 魔法工具 直连
+PROCESS-NAME,trojan
+PROCESS-NAME,trojan-go
+PROCESS-NAME,ss-local
+PROCESS-NAME,ClashX
+PROCESS-NAME,clash
+PROCESS-NAME,v2ray
+PROCESS-NAME,xray
+PROCESS-NAME,xrayr
+
