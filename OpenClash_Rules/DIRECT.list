@@ -6,36 +6,6 @@
 # 规则内容较少，不会影响性能，请放心使用
 
 
-# 其他
-DOMAIN-SUFFIX,claw.cloud
-
-# cf tunnel
-DOMAIN-SUFFIX,argotunnel.com
-PROCESS-NAME,cloudflared
-IP-CIDR,198.41.199.0/24,no-resolve
-IP-CIDR,198.41.200.0/24,no-resolve
-
-# 部分工具 直连
-PROCESS-NAME,lucky
-PROCESS-NAME,vpnserver
-PROCESS-NAME,n2n-edge
-PROCESS-NAME,zerotier-one
-PROCESS-NAME,tailscaled
-
-
-# 魔法工具 直连
-PROCESS-NAME,trojan
-PROCESS-NAME,trojan-go
-PROCESS-NAME,ss-local
-PROCESS-NAME,ClashX
-PROCESS-NAME,clash
-
-# zerotier
-DOMAIN-SUFFIX,zerotier.com
-
-
-# GitHub CDN
-DOMAIN-SUFFIX,jsdelivr.net
 # 猫眼浏览器
 DOMAIN-SUFFIX,catsxp.com
 # 其他域名
@@ -101,145 +71,6 @@ DOMAIN-SUFFIX,sgtv.ii00.cc
 DOMAIN-SUFFIX,cn-music.mefun.vip
 
 
-
-# pt图库 直连
-DOMAIN-SUFFIX,pixhost.to
-DOMAIN-SUFFIX,imgbox.com
-DOMAIN-SUFFIX,ptpimg.me
-
-# pt站点 直连
-DOMAIN-SUFFIX,invites.fun
-DOMAIN-SUFFIX,m-team.cc
-DOMAIN-SUFFIX,open.cd
-DOMAIN-SUFFIX,ptcafe.club
-DOMAIN-SUFFIX,tosky.club
-DOMAIN-SUFFIX,ubits.club
-# 爱萝莉
-DOMAIN-SUFFIX,ilolicon.com
-DOMAIN-SUFFIX,ilolicon.cc
-# 
-DOMAIN-SUFFIX,hdtime.org
-DOMAIN-SUFFIX,pttime.org
-DOMAIN-SUFFIX,crabpt.vip
-DOMAIN-SUFFIX,hdatmos.club
-# 冰淇淋
-DOMAIN-SUFFIX,icc2022.xyz
-DOMAIN-SUFFIX,czhch.com
-DOMAIN-SUFFIX,icc2022.de
-# 
-DOMAIN-SUFFIX,rousi.zip
-DOMAIN-SUFFIX,carpt.net
-# 青蛙
-DOMAIN-SUFFIX,qingwapt.com
-DOMAIN-SUFFIX,qingwa.pro
-DOMAIN-SUFFIX,qingwapt.org
-# 麒麟
-DOMAIN-SUFFIX,hdkyl.in
-DOMAIN-SUFFIX,hdkylin.top
-# 末日
-DOMAIN-SUFFIX,agsvpt.com
-DOMAIN-SUFFIX,trackers.work
-# 
-DOMAIN-SUFFIX,ptvicomo.net
-DOMAIN-SUFFIX,hdvideo.one
-DOMAIN-SUFFIX,cyanbug.net
-DOMAIN-SUFFIX,nicept.net
-DOMAIN-SUFFIX,btschool.club
-DOMAIN-SUFFIX,zhuque.in
-# 蝶粉
-DOMAIN-SUFFIX,discfan.net
-DOMAIN-SUFFIX,discfan.xyz
-# 
-DOMAIN-SUFFIX,hdhome.org
-DOMAIN-SUFFIX,hddolby.com
-DOMAIN-SUFFIX,hdarea.club
-DOMAIN-SUFFIX,hhanclub.top
-DOMAIN-SUFFIX,dragonhd.xyz
-# TCCF
-DOMAIN-SUFFIX,et8.org
-# 彩虹岛
-DOMAIN-SUFFIX,ptchdbits.co
-DOMAIN-SUFFIX,rainbowisland.co
-DOMAIN-SUFFIX,chdbits.xyz
-# 
-DOMAIN-SUFFIX,zmpt.cc
-# 铂金家
-DOMAIN-SUFFIX,pthome.net
-DOMAIN-SUFFIX,pthome.org
-# 
-DOMAIN-SUFFIX,haidan.video
-DOMAIN-SUFFIX,ptsbao.club
-# 好多油
-DOMAIN-SUFFIX,hdupt.com
-DOMAIN-SUFFIX,upxin.net
-# 城市
-DOMAIN-SUFFIX,hdcity.city
-DOMAIN-SUFFIX,leniter.org
-# 
-DOMAIN-SUFFIX,springsunday.net
-DOMAIN-SUFFIX,soulvoice.club
-DOMAIN-SUFFIX,hdsky.me
-# 观众
-DOMAIN-SUFFIX,audiences.me
-DOMAIN-SUFFIX,cinefiles.info
-# 
-DOMAIN-SUFFIX,hdfans.org
-# TLF
-DOMAIN-SUFFIX,eastgame.org
-# 
-DOMAIN-SUFFIX,keepfrds.com
-DOMAIN-SUFFIX,leaves.red
-DOMAIN-SUFFIX,piggo.me
-# 柠檬
-DOMAIN-SUFFIX,lemonhd.club
-DOMAIN-SUFFIX,ilovelemonhd.me
-# 
-DOMAIN-SUFFIX,hdpt.xyz
-DOMAIN-SUFFIX,tjupt.org
-DOMAIN-SUFFIX,ourbits.club
-DOMAIN-SUFFIX,azusa.wiki
-DOMAIN-SUFFIX,tu88.men
-DOMAIN-SUFFIX,greatposterwall.com
-# 海豚
-DOMAIN-SUFFIX,dicmusic.com
-DOMAIN-SUFFIX,52dic.vip
-# 
-DOMAIN-SUFFIX,totheglory.im
-DOMAIN-SUFFIX,pterclub.com
-# 外站
-DOMAIN-SUFFIX,blutopia.cc
-# 
-DOMAIN-SUFFIX,pandapt.net
-
-
-# 下载工具 直连
-PROCESS-NAME,BaiduNetdisk_mac
-PROCESS-NAME,BitComet
-PROCESS-NAME,DownloadService
-PROCESS-NAME,Folx
-PROCESS-NAME,LogiOptions
-PROCESS-NAME,LogiOptionsDaemon
-PROCESS-NAME,Motrix.app
-PROCESS-NAME,NetTransport
-PROCESS-NAME,SunloginClient_Desktop
-PROCESS-NAME,SunloginClient_Helper
-PROCESS-NAME,Thunder
-PROCESS-NAME,ThunderVIP
-PROCESS-NAME,Transmission
-PROCESS-NAME,UUBooster
-PROCESS-NAME,WebTorrent
-PROCESS-NAME,WebTorrentHelper
-PROCESS-NAME,amuled
-PROCESS-NAME,aria2c
-PROCESS-NAME,fdm
-PROCESS-NAME,parsecd
-PROCESS-NAME,privoxy
-PROCESS-NAME,qBittorrent
-PROCESS-NAME,qbittorrent*
-PROCESS-NAME,qbittorrent-nox
-PROCESS-NAME,transmission-daemon
-PROCESS-NAME,transmission-qt
-
 # 其他
 DOMAIN,ad.10010.com
 DOMAIN,ad.12306.cn
@@ -249,7 +80,6 @@ DOMAIN,analytics.strava.com
 DOMAIN,app.adjust.com
 DOMAIN,app.appsflyer.com
 DOMAIN,bdtj.tagtic.cn
-DOMAIN,cdn.jsdelivr.net
 DOMAIN,deo.shopeemobile.com
 DOMAIN,eco-push-api-client.meiqia.com
 DOMAIN,errlog.umeng.com
