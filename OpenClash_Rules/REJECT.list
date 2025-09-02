@@ -1,5 +1,5 @@
 #拦截
 
 #softethervpn
-DOMAIN-SUFFIX,softether-network.net
-DOMAIN-SUFFIX,softether.org
+DOMAIN-SUFFIX,nat-traversal.softether-network.net
+DOMAIN-SUFFIX,keepalive.softether.org
