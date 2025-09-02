@@ -2,6 +2,9 @@
 DOMAIN-SUFFIX,zerotier.com
 PROCESS-NAME,zerotier-one
 
+# stun直连
+DOMAIN-KEYWORD,stun
+
 # GitHub CDN
 DOMAIN-SUFFIX,jsdelivr.net
 DOMAIN,cdn.jsdelivr.net
