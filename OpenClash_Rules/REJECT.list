@@ -2,4 +2,5 @@
 
 #softethervpn
 DOMAIN-SUFFIX,nat-traversal.softether-network.net
+DOMAIN-SUFFIX,ddns.softether-network.net
 DOMAIN-SUFFIX,keepalive.softether.org
