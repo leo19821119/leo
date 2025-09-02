@@ -3,7 +3,9 @@
 # REPO: https://github.com/Aethersailor/Custom_OpenClash_Rules
 # 强制代理列表，来自个人收集
 
-
+# 优化网络工具需要代理的地址
+DOMAIN-SUFFIX,cloudflare-dns.com
+DOMAIN-SUFFIX,doh.pubdefault
 
 # GooglePlay 相关
 DOMAIN-SUFFIX,services.googleapis.cn
