@@ -19,10 +19,6 @@ IP-CIDR,1.0.0.1/32,no-resolve
 
 
 # PT相关
-# MDU
-#DOMAIN-SUFFIX,monikadesign.uk
-# U2
-#DOMAIN-SUFFIX,dmhy.org
 # 影
 DOMAIN-SUFFIX,star-space.net
 
