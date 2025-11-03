@@ -4,7 +4,7 @@
 
 #--- 变量定义 ---
 # CloudflareST 目录路径
-CLOUDFLAREST_DIR="/etc/CloudflareSpeedTest"
+CLOUDFLAREST_DIR="$(cd "$(dirname "$0")" && pwd)"
 # 配置文件路径
 DOMAINS_FILE="${CLOUDFLAREST_DIR}/domains.txt"
 PROXY_SERVICES_FILE="${CLOUDFLAREST_DIR}/proxy_services.txt"
