@@ -19,7 +19,6 @@ springsunday.net
 audiences.me
 pt.keepfrds.com
 ourbits.club
-#pterclub.com
 pterclub.net
 www.hddolby.com
 ubits.club
@@ -31,7 +30,6 @@ zmpt.cc
 pthome.net
 www.haidan.video
 hdfans.org
-#ptvicomo.net
 cyanbug.net
 pt.soulvoice.club
 www.qingwapt.com
@@ -99,11 +97,9 @@ tracker.ptcafe.club
 tracker.ptchdbits.co
 tracker.rainbowisland.co
 chdbits.xyz
-#tracker.pterclub.com
 tracker.pterclub.net
 t.pthome.net
 t.pthome.org
-#tracker.ptvicomo.net
 tracker.qingwa.pro
 tracker.qingwapt.com
 tracker.qingwapt.org
