@@ -23,7 +23,7 @@ TEMP_FILE="/tmp/domains_temp.txt"
 INTERVAL_HOURS=${1:-24} # 默认测试时间间隔（小时）
 GET_THRESHOLD=${2:-300} # 默认测速IP选取最大延迟阈值（毫秒）
 MAX_TEST_IPS=${3:-10}   # 默认单个域名最大测试IP数量
-Name_CLOUDFLAREST_EXEC=${4:-cfst}   # 默认CloudflareST 文件名
+Name_CLOUDFLAREST_EXEC=${4:-"cfst"}   # 默认CloudflareST 文件名
 
 # CloudflareST 文件路径
 CLOUDFLAREST_EXEC="${CLOUDFLAREST_DIR}/${Name_CLOUDFLAREST_EXEC}"
