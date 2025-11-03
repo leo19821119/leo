@@ -23,9 +23,6 @@ RESULT_FILE="${CLOUDFLAREST_DIR}/result.csv"
 TIMESTAMP_FILE="${CLOUDFLAREST_DIR}/last_test_timestamp"
 # 测试文件路径
 SPEED_URL="https://test.1852043.xyz/100m"
-# 远程github上的domains.txt
-REMOTE_URL="https://raw.githubusercontent.com/leo19821119/leo/refs/heads/main/CloudflareSpeedTest/domains.txt"
-TEMP_FILE="/tmp/domains_temp.txt"
 
 # CloudflareST 测速命令参数
 CLOUDFLAREST_CMD_PARAMS="-tl ${GET_THRESHOLD} -tll 30 -tlr 0 -t 1 -n 500 -dn 10
@@ -236,30 +233,6 @@ update_test_timestamp() {
     echo "已更新测试时间戳: $(date)"
 }
 
-# 检查更新 远程github上的domains.txt
-check_and_update_domains() {
-    echo "检查 domains.txt 更新..."
-    
-    # 下载远程文件，如果失败则退出
-    if ! curl -fsSL "$REMOTE_URL" -o "$TEMP_FILE"; then
-        echo "无法访问远程URL，跳过更新"
-        rm -f "$TEMP_FILE"
-        return 1
-    fi
-    
-    # 检查是否需要更新
-    if [[ -f "$DOMAINS_FILE" ]] && cmp -s "$DOMAINS_FILE" "$TEMP_FILE"; then
-        echo "本地文件已是最新版本"
-        rm -f "$TEMP_FILE"
-        return 0
-    fi
-    
-    # 备份并更新文件
-    [[ -f "$DOMAINS_FILE" ]] && cp "$DOMAINS_FILE" "${DOMAINS_FILE}.bak"
-    mv "$TEMP_FILE" "$DOMAINS_FILE"
-    echo "文件更新完成"
-}
-
 # 执行完整的测试和hosts更新流程
 run_full_test() {
     echo "--- 开始执行完整的CloudflareSpeedTest测试流程 ---"
@@ -268,9 +241,6 @@ run_full_test() {
     cp "$HOSTS_FILE" "${HOSTS_FILE}.bak.$(date +%Y%m%d%H%M%S)"
     echo "已备份当前hosts文件."
     cleanup_backups
-
-    # 检查更新 远程github上的domains.txt
-    check_and_update_domains
 
     # 从 domains.txt 中分离需要更新和删除的域名
     local domains_to_update=""
