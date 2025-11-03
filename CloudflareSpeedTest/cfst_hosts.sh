@@ -2,9 +2,17 @@
 
 #set -x # 开启调试，用于排查问题
 
+# 默认参数 (可从命令行参数获取)
+INTERVAL_HOURS=${1:-24} # 默认测试时间间隔（小时）
+GET_THRESHOLD=${2:-300} # 默认测速IP选取最大延迟阈值（毫秒）
+MAX_TEST_IPS=${3:-10}   # 默认单个域名最大测试IP数量
+Name_CLOUDFLAREST_EXEC=${4:-"cfst"}   # 默认CloudflareST 文件名
+
 #--- 变量定义 ---
 # CloudflareST 目录路径
 CLOUDFLAREST_DIR="$(cd "$(dirname "$0")" && pwd)"
+# CloudflareST 文件路径
+CLOUDFLAREST_EXEC="${CLOUDFLAREST_DIR}/${Name_CLOUDFLAREST_EXEC}"
 # 配置文件路径
 DOMAINS_FILE="${CLOUDFLAREST_DIR}/domains.txt"
 PROXY_SERVICES_FILE="${CLOUDFLAREST_DIR}/proxy_services.txt"
@@ -18,15 +26,6 @@ SPEED_URL="https://test.1852043.xyz/100m"
 # 远程github上的domains.txt
 REMOTE_URL="https://raw.githubusercontent.com/leo19821119/leo/refs/heads/main/CloudflareSpeedTest/domains.txt"
 TEMP_FILE="/tmp/domains_temp.txt"
-
-# 默认参数 (可从命令行参数获取)
-INTERVAL_HOURS=${1:-24} # 默认测试时间间隔（小时）
-GET_THRESHOLD=${2:-300} # 默认测速IP选取最大延迟阈值（毫秒）
-MAX_TEST_IPS=${3:-10}   # 默认单个域名最大测试IP数量
-Name_CLOUDFLAREST_EXEC=${4:-"cfst"}   # 默认CloudflareST 文件名
-
-# CloudflareST 文件路径
-CLOUDFLAREST_EXEC="${CLOUDFLAREST_DIR}/${Name_CLOUDFLAREST_EXEC}"
 
 # CloudflareST 测速命令参数
 CLOUDFLAREST_CMD_PARAMS="-tl ${GET_THRESHOLD} -tll 30 -tlr 0 -t 1 -n 500 -dn 10
