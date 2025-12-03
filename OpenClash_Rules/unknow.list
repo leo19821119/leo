@@ -1,3 +1,5 @@
+#未知web站点或者ssh可以安排走代理
+
 DST-PORT,80
 DST-PORT,443
 DST-PORT,22
