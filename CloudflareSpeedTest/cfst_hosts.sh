@@ -18,7 +18,7 @@ DOMAINS_FILE="${CLOUDFLAREST_DIR}/domains.txt"
 PROXY_SERVICES_FILE="${CLOUDFLAREST_DIR}/proxy_services.txt"
 # hosts文件路径
 DNSMASQ_FILE="/etc/dnsmasq.conf"
-HOSTS_FILE=DNSMASQ_FILE #"/etc/hosts"
+HOSTS_FILE="$DNSMASQ_FILE" #"/etc/hosts"
 # 结果文件路径
 RESULT_FILE="${CLOUDFLAREST_DIR}/result.csv"
 TIMESTAMP_FILE="${CLOUDFLAREST_DIR}/last_test_timestamp"
