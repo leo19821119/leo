@@ -7,20 +7,20 @@ www.visaeurope.ch
 www.visa.com.br
 www.visasoutheasteurope.com
 
-region1.argotunnel.com
-region2.argotunnel.com
-region1.v2.argotunnel.com
-region2.v2.argotunnel.com
+#region1.argotunnel.com
+#region2.argotunnel.com
+#region1.v2.argotunnel.com
+#region2.v2.argotunnel.com
 
-tv1.ilgq.dpdns.org
-tv2.ilgq.dpdns.org
-tv3.ilgq.dpdns.org
-tv4.ilgq.dpdns.org
-tv5.ilgq.dpdns.org
-tv6.ilgq.dpdns.org
-tv7.ilgq.dpdns.org
-tv8.ilgq.dpdns.org
-tv9.ilgq.dpdns.org
+#tv1.ilgq.dpdns.org
+#tv2.ilgq.dpdns.org
+#tv3.ilgq.dpdns.org
+#tv4.ilgq.dpdns.org
+#tv5.ilgq.dpdns.org
+#tv6.ilgq.dpdns.org
+#tv7.ilgq.dpdns.org
+#tv8.ilgq.dpdns.org
+#tv9.ilgq.dpdns.org
 
 hdsky.me
 kp.m-team.cc
