@@ -169,16 +169,6 @@ update_hosts_for_domain() {
                 found_ip="$ip"
                 break # 找到后立即退出循环
                 
-                local url="https://${domain}"
-                local http_code=$(curl -s -o /dev/null -w "%{http_code}" --connect-timeout 5 --resolve "${domain}:443:${ip}" "${url}")
-
-                echo "  - 测试IP ${ip} 对域名 ${domain}，返回码: ${http_code}" >&2
-                
-                if [[ "$http_code" -eq 000 || ("$http_code" -ge 200 && "$http_code" -lt 500) ]]; then
-                    echo "  - 找到可用IP: ${ip}" >&2
-                    found_ip="$ip"
-                    break # 找到后立即退出循环
-                fi
             done
         fi
     else
@@ -337,21 +327,9 @@ check_all_connectivity() {
             break # 找到后立即退出循环
         else
             echo "$domain 联通失败，尝试更换IP。"
-            any_failed=true
-            # 尝试更新hosts，若失败则删除记录
-            update_hosts_for_domain "$domain"
+            run_full_test
         fi
     done
-
-    if $any_failed; then
-        /etc/init.d/dnsmasq restart
-        echo "已重启dnsmasq服务。"
-        echo "部分域名联通失败，已尝试更换IP。"
-        return 1
-    else
-        echo "所有域名联通正常。"
-        return 0
-    fi
 }
 
 #--- 主程序入口 ---
