@@ -322,7 +322,7 @@ check_all_connectivity() {
         
         echo "正在测试 $domain, HTTP状态码: $http_code" >&2
         
-        if [["$http_code" -ge 200 && "$http_code" -lt 500]]; then
+        if [[ "$http_code" -ge 200 && "$http_code" -lt 500 ]]; then
             echo "$domain 联通正常。"            
         else
             echo "$domain 联通失败，尝试更换IP。"
