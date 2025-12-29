@@ -17,7 +17,8 @@ CLOUDFLAREST_EXEC="${CLOUDFLAREST_DIR}/${Name_CLOUDFLAREST_EXEC}"
 DOMAINS_FILE="${CLOUDFLAREST_DIR}/domains.txt"
 PROXY_SERVICES_FILE="${CLOUDFLAREST_DIR}/proxy_services.txt"
 # hosts文件路径
-HOSTS_FILE="/etc/hosts"
+DNSMASQ_FILE="/etc/dnsmasq.conf"
+HOSTS_FILE=DNSMASQ_FILE #"/etc/hosts"
 # 结果文件路径
 RESULT_FILE="${CLOUDFLAREST_DIR}/result.csv"
 TIMESTAMP_FILE="${CLOUDFLAREST_DIR}/last_test_timestamp"
@@ -119,15 +120,21 @@ start_all_stopped_proxies() {
 # 从hosts文件中删除指定域名的记录
 remove_domains_from_hosts() {
     local domains_to_remove="$1"
+
     if [ -z "$domains_to_remove" ]; then
-        echo "没有需要从hosts中删除的域名。"
+        echo "没有需要从 Dnsmasq 配置中删除的域名。"
         return
     fi
-    echo "正在从hosts文件中删除指定域名..."
+
+    echo "正在从 Dnsmasq 配置中删除指定域名..."
     for domain in $domains_to_remove; do
-        # 删除包含该域名的行，使用安全的方式
-        sed -i "/[[:space:]]$domain$/d" "$HOSTS_FILE"
-        echo "已从hosts中删除域名: $domain"
+        # 检查是否存在该记录
+        if grep -q "address=/$domain/" "$DNSMASQ_FILE"; then
+            # 删除匹配 address=/domain/ 的行
+            # 使用 \/ 对斜杠进行转义
+            sed -i "/address=\/$domain\//d" "$DNSMASQ_FILE"
+            echo "已从 Dnsmasq 中删除域名记录: $domain"
+        fi
     done
 }
 
@@ -175,21 +182,30 @@ update_hosts_for_domain() {
         echo "错误：未找到测速结果文件或结果为空，无法尝试更换IP。" >&2
     fi
 
-    # 根据是否找到可用IP来更新hosts
+
+    # 根据是否找到可用IP来更新 dnsmasq 配置
     if [ -n "$found_ip" ]; then
         echo "找到域名 ${domain} 的最佳IP: $found_ip"
-        if grep -q "[[:space:]]$domain$" "$HOSTS_FILE"; then
-            sed -i "s#^.*[[:space:]]$domain\$#$found_ip $domain#" "$HOSTS_FILE"
-            echo "已更新hosts文件中 $domain 的IP为 $found_ip"
+        
+        # 检查是否已经存在该域名的 address 记录
+        # 匹配格式为: address=/domain/IP
+        if grep -q "address=/$domain/" "$DNSMASQ_FILE"; then
+            # 使用 sed 替换已有的记录
+            # 原理：匹配以 address=/domain/ 开头的行，替换为完整的 address=/domain/found_ip
+            sed -i "s#^address=/$domain/.*#address=/$domain/$found_ip#" "$DNSMASQ_FILE"
+            echo "已更新 Dnsmasq 配置中 $domain 的解析为 $found_ip"
         else
-            echo "$found_ip $domain" >> "$HOSTS_FILE"
-            echo "已向hosts文件添加 $found_ip 指向 $domain"
+            # 如果不存在，则追加到文件末尾
+            echo "address=/$domain/$found_ip" >> "$DNSMASQ_FILE"
+            echo "已向 Dnsmasq 配置添加 address=/$domain/$found_ip"
         fi
-        return 0 # 成功
+        
+        return 0
     else
-        echo "警告：未能为域名 ${domain} 找到可用的IP，将从hosts中删除此域名记录。" >&2
-        sed -i "/[[:space:]]$domain$/d" "$HOSTS_FILE"
-        return 1 # 失败
+        echo "警告：未能为域名 ${domain} 找到可用的IP，将从配置中删除此域名记录。" >&2
+        # 删除匹配 address=/domain/ 的行
+        sed -i "/address=\/$domain\//d" "$DNSMASQ_FILE"
+        return 1
     fi
 }
 
