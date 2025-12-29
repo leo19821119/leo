@@ -334,6 +334,7 @@ check_all_connectivity() {
         
         if [[ "$http_code" -eq 000 || ("$http_code" -ge 200 && "$http_code" -lt 500) ]]; then
             echo "$domain 联通正常。"
+            break # 找到后立即退出循环
         else
             echo "$domain 联通失败，尝试更换IP。"
             any_failed=true
@@ -365,7 +366,7 @@ if should_run_test; then
     run_full_test
 else
     # 未到测试间隔，仅检查连通性并在必要时修复
-    #check_all_connectivity
+    check_all_connectivity
 fi
 
 exit 0
