@@ -1,5 +1,12 @@
 // 以#开头的域名会被从hosts文件中删除，建议不用的域名使用#注释而不是直接删除，避免hosts文件残留不用的域名的记录
 
+usa.visa.com
+myanmar.visa.com
+www.visa.com.tw
+www.visaeurope.ch
+www.visa.com.br
+www.visasoutheasteurope.com
+
 region1.argotunnel.com
 region2.argotunnel.com
 region1.v2.argotunnel.com
@@ -14,13 +21,6 @@ tv6.ilgq.dpdns.org
 tv7.ilgq.dpdns.org
 tv8.ilgq.dpdns.org
 tv9.ilgq.dpdns.org
-
-usa.visa.com
-myanmar.visa.com
-www.visa.com.tw
-www.visaeurope.ch
-www.visa.com.br
-www.visasoutheasteurope.com
 
 hdsky.me
 kp.m-team.cc
