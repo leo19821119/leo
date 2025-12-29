@@ -54,7 +54,7 @@ azusa.wiki
 #pt.tu88.men
 www.hdkyl.in
 www.agsvpt.com
-pt.agsvpt.cn
+#pt.agsvpt.cn
 www.dragonhd.xyz
 et8.org
 pt.eastgame.org
@@ -78,7 +78,7 @@ greatposterwall.com
 dicmusic.com
 
 tracker.52dic.vip
-tracker.agsvpt.cn
+#tracker.agsvpt.cn
 agsvpt.trackers.work
 anime-no-index.com
 announce.haidan.video
