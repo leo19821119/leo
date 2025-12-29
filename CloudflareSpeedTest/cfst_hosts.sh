@@ -164,6 +164,11 @@ update_hosts_for_domain() {
             echo "警告：测速结果中没有可测试的IP。" >&2
         else
             for ip in "${ips[@]}"; do
+                
+                echo "  - 找到可用IP: ${ip}" >&2
+                found_ip="$ip"
+                break # 找到后立即退出循环
+                
                 local url="https://${domain}"
                 local http_code=$(curl -s -o /dev/null -w "%{http_code}" --connect-timeout 5 --resolve "${domain}:443:${ip}" "${url}")
 
@@ -360,7 +365,7 @@ if should_run_test; then
     run_full_test
 else
     # 未到测试间隔，仅检查连通性并在必要时修复
-    check_all_connectivity
+    #check_all_connectivity
 fi
 
 exit 0
