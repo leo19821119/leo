@@ -9,9 +9,8 @@ DOMAIN-SUFFIX,www.visasoutheasteurope.com
 # cf tunnel
 DOMAIN-SUFFIX,argotunnel.com
 PROCESS-NAME,cloudflared
-#IP-CIDR,198.41.199.0/24,no-resolve
-#IP-CIDR,198.41.200.0/24,no-resolve
 
+# cf cdn
 IP-CIDR,173.245.48.0/20,no-resolve
 IP-CIDR,103.21.244.0/22,no-resolve
 IP-CIDR,103.22.200.0/22,no-resolve
