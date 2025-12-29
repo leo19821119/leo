@@ -187,23 +187,26 @@ update_hosts_for_domain() {
     if [ -n "$found_ip" ]; then
         echo "找到域名 ${domain} 的最佳IP: $found_ip"
         
-        # 检查是否已经存在该域名的 address 记录
-        # 匹配格式为: address=/domain/IP
-        if grep -q "address=/$domain/" "$DNSMASQ_FILE"; then
-            # 使用 sed 替换已有的记录
-            # 原理：匹配以 address=/domain/ 开头的行，替换为完整的 address=/domain/found_ip
-            sed -i "s#^address=/$domain/.*#address=/$domain/$found_ip#" "$DNSMASQ_FILE"
-            echo "已更新 Dnsmasq 配置中 $domain 的解析为 $found_ip"
+        # --- 1. 处理 IPv4 地址 ---
+        if grep -q "address=/$domain/[0-9]\{1,3\}\." "$DNSMASQ_FILE"; then
+            # 替换已有的 IPv4 记录 (匹配包含数字点号的格式)
+            sed -i "s#^address=/$domain/[0-9]\{1,3\}\..*#address=/$domain/$found_ip#" "$DNSMASQ_FILE"
+            echo "已更新 Dnsmasq IPv4 解析: $domain -> $found_ip"
         else
-            # 如果不存在，则追加到文件末尾
             echo "address=/$domain/$found_ip" >> "$DNSMASQ_FILE"
-            echo "已向 Dnsmasq 配置添加 address=/$domain/$found_ip"
+            echo "已添加 Dnsmasq IPv4 解析: $domain -> $found_ip"
+        fi
+
+        # --- 2. 处理 IPv6 屏蔽 (address=/domain/::) ---
+        if ! grep -q "address=/$domain/::" "$DNSMASQ_FILE"; then
+            echo "address=/$domain/::" >> "$DNSMASQ_FILE"
+            echo "已添加 IPv6 屏蔽记录: address=/$domain/::"
         fi
         
         return 0
     else
-        echo "警告：未能为域名 ${domain} 找到可用的IP，将从配置中删除此域名记录。" >&2
-        # 删除匹配 address=/domain/ 的行
+        echo "警告：未能为域名 ${domain} 找到可用的IP，将从配置中删除此域名相关记录。" >&2
+        # 删除该域名的所有 address 记录（包括 IPv4 和 IPv6 屏蔽）
         sed -i "/address=\/$domain\//d" "$DNSMASQ_FILE"
         return 1
     fi
