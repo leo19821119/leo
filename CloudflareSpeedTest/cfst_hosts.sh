@@ -198,10 +198,10 @@ update_hosts_for_domain() {
         fi
 
         # --- 2. 处理 IPv6 屏蔽 (address=/domain/::) ---
-        if ! grep -q "address=/$domain/::" "$DNSMASQ_FILE"; then
-            echo "address=/$domain/::" >> "$DNSMASQ_FILE"
-            echo "已添加 IPv6 屏蔽记录: address=/$domain/::"
-        fi
+        #if ! grep -q "address=/$domain/::" "$DNSMASQ_FILE"; then
+        #    echo "address=/$domain/::" >> "$DNSMASQ_FILE"
+        #    echo "已添加 IPv6 屏蔽记录: address=/$domain/::"
+        #fi
         
         return 0
     else
