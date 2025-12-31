@@ -1,4 +1,8 @@
 // 以#开头的域名会被从hosts文件中删除，建议不用的域名使用#注释而不是直接删除，避免hosts文件残留不用的域名的记录
+#region1.argotunnel.com
+#region2.argotunnel.com
+#region1.v2.argotunnel.com
+#region2.v2.argotunnel.com
 
 usa.visa.com
 myanmar.visa.com
@@ -6,11 +10,6 @@ www.visa.com.tw
 www.visaeurope.ch
 www.visa.com.br
 www.visasoutheasteurope.com
-
-#region1.argotunnel.com
-#region2.argotunnel.com
-#region1.v2.argotunnel.com
-#region2.v2.argotunnel.com
 
 ilgq.dpdns.org
 ilgq.qzz.io
@@ -26,6 +25,7 @@ btschool.club
 carpt.net
 chdbits.xyz
 cinefiles.info
+crabpt.vip
 cyanbug.net
 dicmusic.com
 discfan.net
