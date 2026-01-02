@@ -104,7 +104,7 @@ update_proxy_services_status() {
 
     for svc in $svc_list; do
         if [ -x "/etc/init.d/$svc" ]; then
-            echo "正在发送 $action 指令: $svc"
+            echo "正在给 $svc 发送 $action 指令"
             /etc/init.d/"$svc" "$action" >/dev/null 2>&1
         fi
     done
