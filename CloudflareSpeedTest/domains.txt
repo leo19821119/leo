@@ -24,7 +24,7 @@ tv7.ilgq.dpdns.org
 tv8.ilgq.dpdns.org
 tv9.ilgq.dpdns.org
 
-api.ptpimg.me
+images2.imgbox.com
 api.gateway996.com
 
 hdsky.me
