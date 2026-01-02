@@ -1,19 +1,8 @@
 # 默认直连但是随时可能需要切换的列表，来自个人收集
 
-# CF优选需要直连
-DOMAIN-SUFFIX,usa.visa.com
-DOMAIN-SUFFIX,myanmar.visa.com
-DOMAIN-SUFFIX,www.visa.com.tw
-DOMAIN-SUFFIX,www.visaeurope.ch
-DOMAIN-SUFFIX,www.visa.com.br
-DOMAIN-SUFFIX,www.visasoutheasteurope.com
-
-# cf tunnel
-DOMAIN-SUFFIX,argotunnel.com
-PROCESS-NAME,cloudflared
 
 
-# 特别服务
+# 自建vps和自有域名
 DOMAIN-SUFFIX,ilgq.cn
 DOMAIN-SUFFIX,1852043.xyz
 DOMAIN-SUFFIX,ilgq.dpdns.org
