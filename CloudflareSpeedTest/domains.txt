@@ -12,6 +12,8 @@ www.visasoutheasteurope.com
 #region1.v2.argotunnel.com
 #region2.v2.argotunnel.com
 
+im.ilgq.dpdns.org
+sa6400.ilgq.dpdns.org
 tv1.ilgq.dpdns.org
 tv2.ilgq.dpdns.org
 tv3.ilgq.dpdns.org
