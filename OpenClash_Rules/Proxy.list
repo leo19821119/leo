@@ -4,7 +4,6 @@
 # 强制代理列表，来自个人收集
 
 # 优化网络工具需要代理的地址
-DOMAIN-SUFFIX,cloudflare-dns.com
 DOMAIN-SUFFIX,doh.pubdefault
 
 # GooglePlay 相关
@@ -14,6 +13,7 @@ DOMAIN-SUFFIX,googleapis.cn
 DOMAIN-SUFFIX,xn--ngstr-lra8j.com
 
 # Cloudflare DNS
+DOMAIN-SUFFIX,cloudflare-dns.com
 IP-CIDR,1.1.1.1/32,no-resolve
 IP-CIDR,1.0.0.1/32,no-resolve
 
