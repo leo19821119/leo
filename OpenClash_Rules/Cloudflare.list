@@ -1,14 +1,4 @@
-# CF伪装需要直连
-DOMAIN-SUFFIX,usa.visa.com
-DOMAIN-SUFFIX,myanmar.visa.com
-DOMAIN-SUFFIX,www.visa.com.tw
-DOMAIN-SUFFIX,www.visaeurope.ch
-DOMAIN-SUFFIX,www.visa.com.br
-DOMAIN-SUFFIX,www.visasoutheasteurope.com
 
-# cf tunnel
-DOMAIN-SUFFIX,argotunnel.com
-PROCESS-NAME,cloudflared
 
 # cf cdn
 IP-CIDR,173.245.48.0/20,no-resolve
