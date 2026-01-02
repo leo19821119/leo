@@ -1,3 +1,16 @@
+# CF优选魔法域名
+DOMAIN-SUFFIX,usa.visa.com
+DOMAIN-SUFFIX,myanmar.visa.com
+DOMAIN-SUFFIX,www.visa.com.tw
+DOMAIN-SUFFIX,www.visaeurope.ch
+DOMAIN-SUFFIX,www.visa.com.br
+DOMAIN-SUFFIX,www.visasoutheasteurope.com
+
+# cf tunnel
+DOMAIN-SUFFIX,argotunnel.com
+PROCESS-NAME,cloudflared
+
+
 # zerotier
 DOMAIN-SUFFIX,zerotier.com
 PROCESS-NAME,zerotier-one
