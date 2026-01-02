@@ -5,8 +5,8 @@
 
 # pt图库 直连
 #DOMAIN-SUFFIX,pixhost.to
+#DOMAIN-SUFFIX,ptpimg.me
 #DOMAIN-SUFFIX,imgbox.com
-DOMAIN-SUFFIX,ptpimg.me
 DOMAIN-SUFFIX,gateway996.com
 
 # pt站点 直连
