@@ -160,9 +160,9 @@ update_mosdns_config() {
     echo "$new_ips"
     backup_mosdns_conf_file
 
-    sed -i "/list local_dns/d" "$MOSDNS_CONF"
+    sed -i "/list cloudflare_ip/d" "$MOSDNS_CONF"
     for ip in $new_ips; do
-        sed -i "/config mosdns/a \    list local_dns '$ip'" "$MOSDNS_CONF"
+        sed -i "/config mosdns/a \    list cloudflare_ip '$ip'" "$MOSDNS_CONF"
     done
 
     if [ -x "/etc/init.d/mosdns" ]; then
