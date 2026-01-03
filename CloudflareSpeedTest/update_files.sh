@@ -1,3 +1,4 @@
+
 #!/bin/bash
 
 # 获取脚本所在目录
@@ -5,10 +6,13 @@ CLOUDFLAREST_DIR="$(cd "$(dirname "$0")" && pwd)"
 
 # 定义文件和对应的URL
 declare -A FILE_URLS=(    
-    ["cfst_hosts.sh"]="https://raw.githubusercontent.com/leo19821119/leo/refs/heads/main/CloudflareSpeedTest/cfst_hosts.sh"
+    ["cfst_to_mosdns.sh"]="https://raw.githubusercontent.com/leo19821119/leo/refs/heads/main/CloudflareSpeedTest/cfst_to_mosdns.sh"
     ["domains.txt"]="https://raw.githubusercontent.com/leo19821119/leo/refs/heads/main/CloudflareSpeedTest/domains.txt"
     ["ip.txt"]="https://raw.githubusercontent.com/leo19821119/leo/refs/heads/main/CloudflareSpeedTest/ip.txt"
     ["last_test_timestamp"]="https://raw.githubusercontent.com/leo19821119/leo/refs/heads/main/CloudflareSpeedTest/last_test_timestamp"
+    ["proxy_services.txt"]="https://raw.githubusercontent.com/leo19821119/leo/refs/heads/main/CloudflareSpeedTest/proxy_services.txt"
+    ["cfst"]="https://raw.githubusercontent.com/leo19821119/leo/refs/heads/main/CloudflareSpeedTest/cfst"
+    ["cfst-arm64"]="https://raw.githubusercontent.com/leo19821119/leo/refs/heads/main/CloudflareSpeedTest/cfst-arm64"
 )
 
 # 更新文件函数
@@ -92,3 +96,5 @@ main() {
 
 # 执行主函数
 main "$@"
+
+
