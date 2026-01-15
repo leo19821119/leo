@@ -32,3 +32,6 @@ DOMAIN-SUFFIX,star-space.net
 # 特别服务
 # DOMAIN-SUFFIX,crashlytics.com
 
+# 证书申请
+DOMAIN-SUFFIX,letsencrypt.org
+
