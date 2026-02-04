@@ -35,3 +35,5 @@ DOMAIN-SUFFIX,star-space.net
 # 证书申请
 DOMAIN-SUFFIX,letsencrypt.org
 
+# 机场域名
+DOMAIN-SUFFIX,llgjc.org
