@@ -6,7 +6,7 @@
 # 规则内容较少，不会影响性能，请放心使用
 
 # 中文域名走直连
-DOMAIN-KEYWORD,xn--
+#DOMAIN-KEYWORD,xn--
 
 
 # 猫眼浏览器
