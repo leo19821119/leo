@@ -1,14 +1,25 @@
 # 默认直连但是随时可能需要切换的列表，来自个人收集
 
 
-
-# 自建vps和自有域名
-DOMAIN-SUFFIX,ilgq.cn
+# 自有域名
 DOMAIN-SUFFIX,1852043.xyz
 DOMAIN-SUFFIX,ilgq.dpdns.org
 DOMAIN-SUFFIX,ilgq.qzz.io
-DOMAIN-SUFFIX,clawcloudrun.com
-DOMAIN-SUFFIX,cfargotunnel.com
+DOMAIN-SUFFIX,ilgq.ccwu.cc
+DOMAIN-SUFFIX,ileo.ccwu.cc
+DOMAIN-SUFFIX,cnbox.ccwu.cc
+DOMAIN-SUFFIX,cbyz.ccwu.cc
+DOMAIN-SUFFIX,coes.ccwu.cc
+DOMAIN-SUFFIX,ilgq.cc.cd
+DOMAIN-SUFFIX,ileo.cc.cd
+DOMAIN-SUFFIX,ilgq.l.cd
+DOMAIN-SUFFIX,ileo.l.cd
+DOMAIN-SUFFIX,nbox.l.cd
+DOMAIN-SUFFIX,byz.l.cd
+DOMAIN-SUFFIX,oes.l.cd
+
+
+# 自建vps
 IP-CIDR,168.107.19.64/32
 IP-CIDR,168.107.60.142/32
 IP-CIDR,47.131.89.186/32
