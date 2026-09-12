@@ -6,6 +6,10 @@ DOMAIN-SUFFIX,www.visaeurope.ch
 DOMAIN-SUFFIX,www.visa.com.br
 DOMAIN-SUFFIX,www.visasoutheasteurope.com
 
+
+# cfargotunnel
+DOMAIN-SUFFIX,cfargotunnel.com
+
 # cf tunnel
 DOMAIN-SUFFIX,argotunnel.com
 PROCESS-NAME,cloudflared
