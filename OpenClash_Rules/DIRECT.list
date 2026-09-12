@@ -5,9 +5,6 @@
 # 部分域名可能和中国大陆域名列表存在重叠
 # 规则内容较少，不会影响性能，请放心使用
 
-# cfargotunnel
-DOMAIN-SUFFIX,cfargotunnel.com
-
 
 # 猫眼浏览器
 DOMAIN-SUFFIX,catsxp.com
