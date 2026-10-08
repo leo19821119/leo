@@ -18,6 +18,9 @@ DOMAIN-SUFFIX,nbox.l.cd
 DOMAIN-SUFFIX,byz.l.cd
 DOMAIN-SUFFIX,oes.l.cd
 
+# 机场域名
+DOMAIN-KEYWORD,yfjcs
+DOMAIN-KEYWORD,visa
 
 # 自建vps
 IP-CIDR,168.107.19.64/32
